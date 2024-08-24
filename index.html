@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>check wheather</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <div id="container">
+        <div  class="searchBox">
+            <input placeholder="Enter city name" id="cityInput" type="text">
+            <ion-icon id="searchBtn" name="search-outline"></ion-icon>
+        </div>
+        <div class="resultBox">
+            <ul>
+            </ul>
+        </div>
+        <p class="error">invalid city name</p>
+        <p id="city">Bengaluru</p>
+        <img id="main-img" src="assets/sun.png" alt="main">
+        <p id="temp" >32C</p>
+        <div id="info">
+            <div class="box">
+                <img src="assets/humidity.png" alt="img1">
+                <h2>Humidity</h2>
+                <h3 id="humidity">32%</h3>
+            </div>
+
+            <div class="box">
+                <img src="assets/wind.png" alt="img1">
+                <h2>Wind</h2>
+                <h3 id="windSpeed" >2km/h</h3>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(26, 25, 31);
+}
+#container{
+    position: relative;
+    border: 5px solid rgb(0, 123, 255);
+    padding: 20px;
+    box-sizing: border-box;
+    width: 300px;
+    height: auto;
+    background-color: rgb(229, 248, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 30px;
+}
+.error{
+    top: 10%;
+    left: 14%;
+    color: red;
+    font-size: 13px;
+    position: absolute;
+    display: none;
+}
+#main-img{
+    height: 130px;
+}
+#city{
+    font-size: 1.5rem;
+}
+#info img{
+
+    height: 40px;
+}
+.box h2,h3{
+    margin: 0;
+}
+.box h2{
+    font-size: 1.25rem;
+}
+#temp{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+#info{
+    width: 300px;
+    height: 120px;
+    /* background-color: rgb(155, 154, 154); */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.box{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.searchBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.searchBox input{
+    padding: 8px 5px;
+    border-radius: 10px;
+    outline: none;
+    border: 2px solid rgb(0, 123, 255);
+}
+
+ion-icon{
+    padding: 8px;
+    color: white;
+    font-weight: bold;
+    background-color: rgb(0, 123, 255);
+    border-radius: 50%;
+    cursor: pointer;
+}
+.resultBox{
+    border: 2px solid rgb(0, 123, 255);
+    display: none;
+    padding-top:5px;
+    top: 13%;
+    left: 13%;
+    width: 175px;
+    border-radius: 10px;
+    background-color: white;
+    height: 90px;
+    z-index: 10;
+    position: absolute;
+    overflow-y: scroll;
+}
+.resultBox li{
+    padding: 2px 8px;
+    color: rgb(84, 84, 84);
+    list-style: none;
+    cursor: pointer;
+}
+li:hover{
+    background-color: rgb(222, 222, 222);
+}
+.resultBox ul{
+    margin: 0;
+    padding: 0;
+}
